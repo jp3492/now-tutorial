@@ -1,4 +1,4 @@
-import Verifier from 'verify-cognito-token'
+const Verifier = require('verify-cognito-token')
 
 const User = require('../models/user')
 
@@ -11,7 +11,7 @@ const params = {
 
 const verifier = new Verifier(params);
 
-export default async (req, res) => {
+module.exports = async (req, res) => {
   const { accesstoken, cognitoid } = req.headers
   let verified
   try {
