@@ -5,7 +5,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
 
-      Test successs
+      Test success and updated
     </div>
   );
 }
